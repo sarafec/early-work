@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Early Work | Sara Fecadu</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="icon" type="image/png" href="assets/favicon.png">
+
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+		}
+
+		header {
+			text-align: center;
+		}
+
+		.title {
+			font-size: 50px;
+			margin-top: 0;
+		}
+
+		.subtitle {
+			font-size: 28px;
+			margin-top: -30px;
+			padding-bottom: 10px;
+			border-bottom: 2px solid #edeef0;
+
+		}
+		
+		.profile {
+			text-align: center;
+		}
+
+		.profile-image {
+			max-width: 200px;
+		 	max-height: 200px;
+		 	border-radius: 100px;
+		 	margin-top: -20px;
+		 	margin-right: 40px;
+		 	margin-left: 25px;
+		 	border: 2px solid #edeef0;
+		}
+
+		/* PROJECT AREA */
+		.project-container {
+			padding: 20px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 10px;
+			grid-template-rows: minmax(100px, auto);
+		}
+		
+		.project-entry {
+			padding: 5px;
+			font-size: 16px;
+		}
+
+		.project-photo img{
+			max-width: 300px;
+			max-height: 300px;
+			border: 2px solid #edeef0;
+		}
+
+		.entry-1 {
+			grid-column: 1;
+			grid-row: 1;
+		}
+
+		.entry-2 {
+			grid-column: 2;
+			grid-row: 1;
+		}
+
+		.entry-3 {
+			grid-column: 3;
+			grid-row: 1;
+		}
+
+		.entry-4 {
+			grid-column: 1;
+			grid-row: 2;
+		}
+
+		.entry-5 {
+			grid-column: 2;
+			grid-row: 2;
+		}
+
+		.entry-6 {
+			grid-column: 3;
+			grid-row: 2;
+		}
+
+		.entry-7 {
+			grid-column: 1;
+			grid-row: 3;
+		}
+
+		.entry-8 {
+			grid-column: 2;
+			grid-row: 3;
+		}
+
+		.entry-9 {
+			grid-column: 3;
+			grid-row: 3;
+		}
+
+		.entry-10 {
+			grid-column: 1;
+			grid-row: 4;
+		}
+	
+		/* FOOTER */
+		.social-media {
+			float: right;
+			margin-top: 20px 0 15px 0;
+			padding: 5px 0;
+		}
+
+		.social-media img {
+			height: 30px;
+ 			width: 30px;
+ 			margin-right: 10px;
+		}
+
+		/* MOBILE STYLES */
+		@media screen and (max-width: 1050px){
+		
+					
+			.project-container {
+				padding: 20px;
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 10px;
+				grid-template-rows: minmax(100px, auto);
+			}
+
+			.project-photo img{
+				max-width: 90%;
+				max-height: 350px;
+				border: 2px solid #edeef0;
+			}
+		
+			
+			.project-entry {
+				text-align: center;
+				font-size: 16px;
+			}
+
+			.entry-1 {
+				grid-column: 1;
+				grid-row: 1;
+			}
+
+			.entry-2 {
+				grid-column: 1;
+				grid-row: 2;
+			}
+
+			.entry-3 {
+				grid-column: 1;
+				grid-row: 3;
+			}
+
+			.entry-4 {
+				grid-column: 1;
+				grid-row: 4;
+			}
+
+			.entry-5 {
+				grid-column: 1;
+				grid-row: 5;
+			}
+
+			.entry-6 {
+				grid-column: 1;
+				grid-row: 6;
+			}
+
+			.entry-7 {
+				grid-column: 1;
+				grid-row: 7;
+			}
+
+			.entry-8 {
+				grid-column: 1;
+				grid-row: 8;
+			}
+
+			.entry-9 {
+				grid-column: 1;
+				grid-row: 9;
+			}
+
+			.entry-10 {
+				grid-column: 1;
+				grid-row: 10;
+			}
+		
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1 class="title">Early Work</h1>
+		<h3 class="subtitle">Sara Fecadu</h3>
+	</header>
+	<div class="profile">
+		<a href="https://sarafec.github.io/portfolio/"><img class="profile-image" src="assets/photo.jpg" alt="photo of my face"></a>
+	</div>
+
+	<div class="project-container">
+	<!-- 		
+		<div class="project-entry entry-2">
+			<a href="" class="project-photo"><img src="" alt=""></a>
+			<div class="project-title"></div>
+			<div class="project-description">Libraries used:</div>
+		</div> 
+	-->
+
+		<div class="project-entry entry-1">
+			<a href="https://sarafec.github.io/dogs/" class="project-photo" target="_blank"><img src="assets/dogs.png" alt=""></a>
+			<div class="project-title">Dogs</div>
+			<div class="project-description">Libraries used: React</div>
+		</div> 
+
+		<div class="project-entry entry-2">
+			<a href="https://sarafec.github.io/eriSnap/" class="project-photo" target="_blank"><img src="assets/erisnap.png" alt=""></a>
+			<div class="project-title">EriSnap</div>
+			<div class="project-description">Libraries used: Angular</div>
+		</div> 
+
+		<div class="project-entry entry-3">
+			<a href="https://sarafec.github.io/filterByGenre/" class="project-photo" target="_blank"><img src="assets/books.png" alt=""></a>
+			<div class="project-title">Books by genre</div>
+			<div class="project-description">Libraries used: React</div>
+		</div> 
+
+		<div class="project-entry entry-4">
+			<a href="https://sarafec.github.io/filterByYear/" class="project-photo" target="_blank"><img src="assets/bookyear.png" alt=""></a>
+			<div class="project-title">Books by year</div>
+			<div class="project-description">Libraries used: Angular</div>
+		</div> 
+
+		<div class="project-entry entry-5">
+			<a href="https://sarafec.github.io/dessertsMVC-React/" class="project-photo" target="_blank"><img src="assets/dessertsReact.png" alt=""></a>
+			<div class="project-title">DessertsMVC React</div>
+			<div class="project-description">Libraries used: React, React Router</div>
+		</div> 
+
+		<div class="project-entry entry-6">
+			<a href="https://sarafec.github.io/dessertsMVC-Angular/" class="project-photo" target="_blank"><img src="assets/dessertsAngular.png" alt=""></a>
+			<div class="project-title">DessertsMVC Angular</div>
+			<div class="project-description">Libraries used: Angular v4</div>
+		</div> 
+
+		<div class="project-entry entry-7">
+			<a href="https://sarafec.github.io/dessertsMVC-JS/" class="project-photo" target="_blank"><img src="assets/dessertsJS.png" alt=""></a>
+			<div class="project-title">DessertsMVC JS</div>
+			<div class="project-description">APIs used: History API</div>
+		</div> 
+
+		<div class="project-entry entry-8">
+			<a href="https://sarafec.github.io/theWorstClock/" class="project-photo" target="_blank"><img src="assets/clock.png" alt=""></a>
+			<div class="project-title">The Worst Clock</div>
+			<div class="project-description">Libraries used: none</div>
+		</div> 
+
+
+		<div class="project-entry entry-9">
+			<a href="https://sarafec.github.io/saraWatchesMovies/" class="project-photo" target="_blank"><img src="assets/film.png" alt=""></a>
+			<div class="project-title">Some Film Appreciation</div>
+			<div class="project-description">Libraries used: AngularJS, UI Bootstrap</div>
+		</div> 
+
+		<div class="project-entry entry-10">
+			<a href="https://sarafec.github.io/presidentialFunFacts/" class="project-photo" target="_blank"><img src="assets/presidents.png" alt=""></a>
+			<div class="project-title">Presidential Fun Facts</div>
+			<div class="project-description">Libraries used: Bootstrap, jQuery</div>
+		</div>
+	</div>
+
+	<div class="social-media">
+			<!--Twitter-->
+			<a href="https://twitter.com/sarafecadu" target="_blank"><img src="assets/twitter.png" alt="twitter logo"></a>
+			<!--Github-->
+			<a href="https://github.com/sarafec" target="_blank"><img src="assets/github.png" alt="github logo"></a>
+			<!--Medium-->
+			<a href="https://medium.com/@sarafecadu/" target="_blank"><img src="assets/medium.png" alt="medium logo"></a>
+			<!--LinkedIn-->
+			<a href="https://www.linkedin.com/in/sara-fecadu" target="_blank"><img src="assets/linkedin.png" alt="linkedin logo"></a>
+		</div>
+</body>
+
+</html>
